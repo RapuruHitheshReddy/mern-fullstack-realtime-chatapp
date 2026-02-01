@@ -30,10 +30,14 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
+console.log("process.cwd() =", process.cwd());
+console.log("process.env.NODE_ENV =", process.env.NODE_ENV);
 
-if (ENV.NODE_ENV === "production") {
-  const frontendPath = path.join(process.cwd(), "frontend", "dist");
+if (process.env.NODE_ENV === "production") {
+  const ROOT_DIR = path.resolve(process.cwd(), "..");
+  const frontendPath = path.join(ROOT_DIR, "frontend", "dist");
 
+  console.log("ROOT DIR:", ROOT_DIR);
   console.log("SERVING FRONTEND FROM:", frontendPath);
   console.log("FRONTEND EXISTS:", fs.existsSync(frontendPath));
 

@@ -2,6 +2,8 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import path from "path";
 import cors from "cors";
+import fs from "fs";
+
 
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
@@ -31,9 +33,15 @@ app.use("/api/messages", messageRoutes);
 console.log("FRONTEND DIST PATH:", path.join(__dirname, "../../frontend/dist"));
 // make ready for deployment
 if (ENV.NODE_ENV === "production") {
-  const frontendPath = path.join(process.cwd(), "frontend", "dist");
+  const frontendPath = path.join(
+    process.cwd(),
+    "src",
+    "frontend",
+    "dist"
+  );
 
   console.log("SERVING FRONTEND FROM:", frontendPath);
+  console.log("FRONTEND EXISTS:", fs.existsSync(frontendPath));
 
   app.use(express.static(frontendPath));
 

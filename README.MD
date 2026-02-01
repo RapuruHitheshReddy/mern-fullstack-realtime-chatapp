@@ -1,22 +1,66 @@
-<h1 align="center">✨ Full-Stack Chat App with Auth & Emails ✨</h1>
+<h1 align="center">MERN Real-Time Chat Application</h1>
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+<p align="center">
+A full-stack real-time chat application built using the MERN stack, featuring secure authentication,
+real-time messaging, notifications, and a modern responsive UI.
+</p>
 
-Highlights:
+---
 
-- 🔐 Custom JWT Authentication (no 3rd-party auth)
-- ⚡ Real-time Messaging via Socket.io
-- 🟢 Online/Offline Presence Indicators
-- 🔔 Notification & Typing Sounds (with toggle)
-- 📨 Welcome Emails on Signup (Resend)
-- 🗂️ Image Uploads (Cloudinary)
-- 🧰 REST API with Node.js & Express
-- 🧱 MongoDB for Data Persistence
-- 🚦 API Rate-Limiting powered by Arcjet
-- 🎨 Beautiful UI with React, Tailwind CSS & DaisyUI
-- 🧠 Zustand for State Management
-- 🧑‍💻 Git & GitHub Workflow (branches, PRs, merges)
-- 🚀 Easy Deployment (free-tier friendly with Sevalla)
+## 🚀 Project Overview
+
+This project demonstrates a **production-level real-time chat system** built with modern
+full-stack technologies. It focuses on **secure authentication, scalable APIs, and
+real-time communication**, making it suitable for showcasing backend and frontend skills
+in technical interviews.
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication & Security
+- Custom **JWT-based authentication** (no third-party auth providers)
+- Secure protected routes and APIs
+- API rate-limiting using Arcjet
+
+### 💬 Real-Time Communication
+- Real-time messaging with **Socket.io**
+- Online / offline presence indicators
+- Typing indicators and message notifications
+
+### 📨 Notifications & Media
+- Automated **welcome emails** on signup (Resend)
+- Image uploads and media handling via **Cloudinary**
+
+### 🧰 Backend & APIs
+- RESTful API built with **Node.js & Express**
+- **MongoDB** for persistent data storage
+- Scalable backend architecture
+
+### 🎨 Frontend & UI
+- Modern UI built with **React**, **Tailwind CSS**, and **DaisyUI**
+- State management using **Zustand**
+- Responsive and user-friendly design
+
+---
+## 🛠️ Tech Stack
+
+**Frontend**
+- React
+- Tailwind CSS
+- DaisyUI
+- Zustand
+
+**Backend**
+- Node.js
+- Express.js
+- MongoDB
+- Socket.io
+
+**Other Tools & Services**
+- Cloudinary (Media storage)
+- Resend (Email service)
+- Arcjet (Rate limiting & security)
 
 ---
 

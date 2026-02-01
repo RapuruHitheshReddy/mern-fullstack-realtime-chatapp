@@ -31,7 +31,9 @@ app.use("/api/messages", messageRoutes);
 console.log("FRONTEND DIST PATH:", path.join(__dirname, "../../frontend/dist"));
 // make ready for deployment
 if (ENV.NODE_ENV === "production") {
-  const frontendPath = path.join(__dirname, "../../frontend/dist");
+  const frontendPath = path.join(process.cwd(), "frontend", "dist");
+
+  console.log("SERVING FRONTEND FROM:", frontendPath);
 
   app.use(express.static(frontendPath));
 
